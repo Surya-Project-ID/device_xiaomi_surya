@@ -34,3 +34,6 @@ persist.sensor.                    u:object_r:persist_sensors_prop:s0
 persist.sys.thermal.               u:object_r:vendor_thermal_normal_prop:s0
 sys.thermal.                       u:object_r:vendor_thermal_normal_prop:s0
 vendor.sys.thermal.                u:object_r:vendor_thermal_normal_prop:s0
+
+# Audio
+tas.smartpa.debug.                      u:object_r:exported2_default_prop:s0
