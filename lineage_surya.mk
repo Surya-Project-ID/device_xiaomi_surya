@@ -26,7 +26,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Sakura flags
 SAKURA_OFFICIAL := true
-SAKURA_MAINTAINER := Agus
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
