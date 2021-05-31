@@ -330,6 +330,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     $(LOCAL_PATH)/configs/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml
 
+# prebuilt-apps
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt \
+    RetroMusic \
+    ViaBrowser \
+    QPGallery
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
