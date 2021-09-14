@@ -333,6 +333,13 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     libqti-perfd-client
 
+# prebuilt-apps
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt \
+    RetroMusic \
+    ViaBrowser \
+    QPGallery
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi-libperfmgr \
