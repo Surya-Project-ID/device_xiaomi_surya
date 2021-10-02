@@ -80,7 +80,6 @@ void vendor_load_properties() {
 
     std::string model;
     std::string device;
-    std::string fingerprint;
     std::string marketname;
 
     if (hwname == "karna") {
@@ -97,9 +96,6 @@ void vendor_load_properties() {
             model = "M2007J20CG";
     }
 
-    fingerprint = "POCO/surya_eea/surya:11/RKQ1.200826.002/V12.5.2.0.RJGEUXM:user/release-keys";
-
-    set_ro_build_prop("fingerprint", fingerprint);
     set_ro_product_prop("device", device);
     set_ro_product_prop("model", model);
     set_ro_product_prop("marketname", marketname);
