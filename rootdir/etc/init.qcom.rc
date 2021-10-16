@@ -34,6 +34,10 @@ on early-init
     chmod 0755 /sys/kernel/debug
     chmod 0755 /sys/kernel/debug/tracing
 
+on post-fs
+    # Allow writing to the kernel trace log.
+    chmod 0222 /sys/kernel/debug/tracing/trace_marker
+
     # Change ownership of hw_recovery related nodes
     chown system graphics /sys/kernel/debug/dri/0/debug/dump
     chown system graphics /sys/kernel/debug/dri/0/debug/recovery_reg
