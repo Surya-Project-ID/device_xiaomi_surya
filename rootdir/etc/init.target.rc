@@ -37,6 +37,10 @@ on init && property:ro.boot.hwname=*
 on property:ro.boot.product.hardware.sku=surya
     enable vendor.nfc_hal_service
 
+on early-init
+    mount debugfs debugfs /sys/kernel/debug
+    chmod 0755 /sys/kernel/debug
+
 on fs
     mount_all --early
 
