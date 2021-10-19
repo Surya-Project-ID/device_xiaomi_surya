@@ -81,16 +81,20 @@ void vendor_load_properties() {
     std::string model;
     std::string device;
     std::string fingerprint;
+    std::string marketname;
 
     if (hwname == "karna") {
         model = "M2007J20CI";
         device = "karna";
+        marketname = "POCO X3";
     } else {
         device = "surya";
 
+        marketname = "POCO X3 NFC";
         if (region == "THAI" || region == "THAI_PA")
             model = "M2007J20CT";
         else
+        marketname = "POCO X3 NFC";
             model = "M2007J20CG";
     }
 
@@ -99,5 +103,6 @@ void vendor_load_properties() {
     set_ro_build_prop("fingerprint", fingerprint);
     set_ro_product_prop("device", device);
     set_ro_product_prop("model", model);
+    set_ro_product_prop("marketname", marketname);
     property_override("ro.boot.hardware.revision", hardware_revision.c_str());
 }
